@@ -12,12 +12,14 @@ function App() {
         any device anywhere you like!
       </p>
       <div className="plan">
-        <i class="fas fa-music"></i>
+        <i className="fas fa-music"></i>
         <div className="amount">
           <span>Annual Plan</span>
           <p>$59.99/year</p>
         </div>
-        <a href="#">Change</a>
+        <button className="change" type="button">
+          Change
+        </button>
       </div>
       <button className="btn">Proceed to Payment</button>
       <p className="last">Cancel Order</p>
