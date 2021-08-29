@@ -3,8 +3,8 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="container">
-      <img className="picture" src={hero} alt="" />
+    <div className="container" style={styles.box}>
+      <img className="picture" src={hero} alt="App logo" />
       <h2>Order Summary</h2>
       <p className="content">
         You can now listen to millions of <br />
@@ -26,5 +26,18 @@ function App() {
     </div>
   );
 }
+const styles = {
+  box: {
+    textAlign: "center",
+    background: "#fff",
+    width: "350px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: "1.5rem",
+    boxShadow: "0 0 30px #6d7e88",
+  },
+};
 
 export default App;
