@@ -6,6 +6,7 @@ function App() {
     <>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://github.com/ShubhamChavhan09/order-summary"
       >
         Github
