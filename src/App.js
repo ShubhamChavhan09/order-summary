@@ -3,27 +3,35 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="container" style={styles.box}>
-      <img className="picture" src={hero} alt="App logo" />
-      <h2>Order Summary</h2>
-      <p className="content">
-        You can now listen to millions of <br />
-        songs, audiobooks, and podcasts on <br />
-        any device anywhere you like!
-      </p>
-      <div className="plan">
-        <i className="fas fa-music"></i>
-        <div className="amount">
-          <span>Annual Plan</span>
-          <p>$59.99/year</p>
+    <>
+      <a
+        target="_blank"
+        href="https://github.com/ShubhamChavhan09/order-summary"
+      >
+        Github
+      </a>
+      <div className="container" style={styles.box}>
+        <img className="picture" src={hero} alt="App logo" />
+        <h2>Order Summary</h2>
+        <p className="content">
+          You can now listen to millions of <br />
+          songs, audiobooks, and podcasts on <br />
+          any device anywhere you like!
+        </p>
+        <div className="plan">
+          <i className="fas fa-music"></i>
+          <div className="amount">
+            <span>Annual Plan</span>
+            <p>$59.99/year</p>
+          </div>
+          <button className="change" type="button">
+            Change
+          </button>
         </div>
-        <button className="change" type="button">
-          Change
-        </button>
+        <button className="btn">Proceed to Payment</button>
+        <p className="last">Cancel Order</p>
       </div>
-      <button className="btn">Proceed to Payment</button>
-      <p className="last">Cancel Order</p>
-    </div>
+    </>
   );
 }
 const styles = {
